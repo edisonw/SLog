@@ -31,7 +31,7 @@ public class SLog {
   }
 
 
-  public static final String TAG_COMMON = "sqsp-common";
+  public static final String TAG_COMMON = "APP_DEPENDENT_TAG_FOR_USE_WITH_GREP";
 
   public static boolean isLoggingEnabled() {
     return Environment.LOGGING;

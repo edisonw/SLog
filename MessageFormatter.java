@@ -166,6 +166,20 @@ final public class MessageFormatter {
    *          An array of arguments to be substituted in place of formatting anchors
    * @return The formatted message
    */
+  final public static FormattingTuple format(final String messagePattern, Object[] args) {
+    return arrayFormat(messagePattern, args);
+  }
+  
+  /**
+   * Same principle as the {@link #format(String, Object)} and {@link #format(String, Object, Object)} methods except
+   * that any number of arguments can be passed in an array.
+   * 
+   * @param messagePattern
+   *          The message pattern which will be parsed and formatted
+   * @param argArray
+   *          An array of arguments to be substituted in place of formatting anchors
+   * @return The formatted message
+   */
   @SuppressWarnings("rawtypes")
   final public static FormattingTuple arrayFormat(final String messagePattern, final Object[] argArray) {
 

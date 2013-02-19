@@ -1,4 +1,3 @@
-
 public class SLogger extends SLog{
 
   private String tag;
@@ -7,20 +6,12 @@ public class SLogger extends SLog{
     this.tag = getTag(appTag, clazz);
   }
 
+  public SLogger(String appTag, String className) {
+    this.tag = getTag(appTag, className);
+  }
+
   public SLogger(Class<?> clazz) {
-    this("", clazz);
-  }
-
-  /**
-   * If you want to use a logger that is instantiated during class instantiation, you may omit the class name.
-   * @param appTag
-   */
-  public SLogger(String appTag) {
-    this(appTag, Thread.currentThread().getStackTrace()[4].getClass());
-  }
-
-  public SLogger() {
-    this("", Thread.currentThread().getStackTrace()[4].getClass());
+    this(null, clazz);
   }
 
   public void v(String msg) {

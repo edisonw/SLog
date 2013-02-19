@@ -37,8 +37,12 @@ public class SLog {
     return Environment.LOGGING;
   }
 
+  public static String getTag(String appTag,String className) {
+    return appTag + "." + className;
+  }
+
   public static String getTag(String appTag, Class<?> clazz) {
-    return appTag + "." + clazz.getName();
+    return getTag(appTag,clazz.getName());
   }
 
   public static void v(String tag, String msg) {

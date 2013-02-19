@@ -41,210 +41,209 @@ public class SLog {
   }
 
   public static String getTag(String appTag, Class<?> clazz) {
-    return getTag(appTag,clazz.getName());
+    return getTag(appTag, clazz.getName());
   }
 
   public static void v(String tag, String msg) {
     if (Environment.LOGGING) {
-      Log.v(tag, getCallingMethod() + msg);
+      Log.v(tag, getCallingMethod(4) + msg);
     }
   }
 
   public static void v(String tag, String format, Object arg) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg);
-      Log.v(tag, getCallingMethod() + ft.getMessage());
+      Log.v(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void v(String tag, String format, Object arg1, Object arg2) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg1, arg2);
-      Log.v(tag, getCallingMethod() + ft.getMessage());
+      Log.v(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void v(String tag, String format, Object[] args) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, args);
-      Log.v(tag, getCallingMethod() + ft.getMessage());
+      Log.v(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void v(String tag, String msg, Throwable throwable) {
     if (Environment.LOGGING) {
-      Log.v(tag, getCallingMethod() + msg, throwable);
+      Log.v(tag, getCallingMethod(4) + msg, throwable);
     }
   }
 
   public static void d(String tag, String msg) {
     if (Environment.LOGGING) {
-      Log.d(tag, getCallingMethod() + msg);
+      Log.d(tag, getCallingMethod(4) + msg);
     }
   }
 
   public static void d(String tag, String format, Object arg) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg);
-      Log.d(tag, getCallingMethod() + ft.getMessage());
+      Log.d(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void d(String tag, String format, Object arg1, Object arg2) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg1, arg2);
-      Log.d(tag, getCallingMethod() + ft.getMessage());
+      Log.d(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void d(String tag, String format, Object[] args) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, args);
-      Log.d(tag, getCallingMethod() + ft.getMessage());
+      Log.d(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void d(String tag, String msg, Throwable throwable) {
     if (Environment.LOGGING) {
-      Log.d(tag, getCallingMethod() + msg, throwable);
+      Log.d(tag, getCallingMethod(4) + msg, throwable);
     }
   }
 
   public static void i(String tag, String msg) {
     if (Environment.LOGGING) {
-      Log.i(tag, getCallingMethod() + msg);
+      Log.i(tag, getCallingMethod(4) + msg);
     }
   }
 
   public static void i(String tag, String format, Object arg) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg);
-      Log.i(tag, getCallingMethod() + ft.getMessage());
+      Log.i(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void i(String tag, String format, Object arg1, Object arg2) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg1, arg2);
-      Log.i(tag, getCallingMethod() + ft.getMessage());
+      Log.i(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void i(String tag, String format, Object[] args) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, args);
-      Log.i(tag, getCallingMethod() + ft.getMessage());
+      Log.i(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void i(String tag, String msg, Throwable throwable) {
     if (Environment.LOGGING) {
-      Log.i(tag, getCallingMethod() + msg, throwable);
+      Log.i(tag, getCallingMethod(4) + msg, throwable);
     }
   }
 
   public static void w(String tag, String msg) {
     if (Environment.LOGGING) {
-      Log.w(tag, getCallingMethod() + msg);
+      Log.w(tag, getCallingMethod(4) + msg);
     }
   }
 
   public static void w(String tag, String format, Object arg) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg);
-      Log.w(tag, getCallingMethod() + ft.getMessage());
+      Log.w(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void w(String tag, String format, Object[] args) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, args);
-      Log.w(tag, getCallingMethod() + ft.getMessage());
+      Log.w(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void w(String tag, String format, Object arg1, Object arg2) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg1, arg2);
-      Log.w(tag, getCallingMethod() + ft.getMessage());
+      Log.w(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void w(String tag, String msg, Throwable throwable) {
     if (Environment.LOGGING) {
-      Log.w(tag, getCallingMethod() + msg, throwable);
+      Log.w(tag, getCallingMethod(4) + msg, throwable);
     }
   }
 
   public static void e(String tag, String msg) {
     if (Environment.LOGGING) {
-      Log.e(tag, getCallingMethod() + msg);
+      Log.e(tag, getCallingMethod(4) + msg);
     }
   }
 
   public static void e(String tag, String format, Object arg) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg);
-      Log.e(tag, getCallingMethod() + ft.getMessage());
+      Log.e(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void e(String tag, String format, Object arg1, Object arg2) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg1, arg2);
-      Log.e(tag, getCallingMethod() + ft.getMessage());
+      Log.e(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void e(String tag, String format, Object[] args) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, args);
-      Log.e(tag, getCallingMethod() + ft.getMessage());
+      Log.e(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void e(String tag, String msg, Throwable throwable) {
     if (Environment.LOGGING) {
-      Log.e(tag, getCallingMethod() + msg, throwable);
+      Log.e(tag, getCallingMethod(4) + msg, throwable);
     }
   }
 
   public static void wtf(String tag, String msg) {
     if (Environment.LOGGING) {
-      Log.wtf(tag, getCallingMethod() + msg);
+      Log.wtf(tag, getCallingMethod(4) + msg);
     }
   }
 
   public static void wtf(String tag, String format, Object arg) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg);
-      Log.wtf(tag, getCallingMethod() + ft.getMessage());
+      Log.wtf(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void wtf(String tag, String format, Object arg1, Object arg2) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, arg1, arg2);
-      Log.wtf(tag, getCallingMethod() + ft.getMessage());
+      Log.wtf(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void wtf(String tag, String format, Object[] args) {
     if (Environment.LOGGING) {
       FormattingTuple ft = MessageFormatter.format(format, args);
-      Log.wtf(tag, getCallingMethod() + ft.getMessage());
+      Log.wtf(tag, getCallingMethod(4) + ft.getMessage());
     }
   }
 
   public static void wtf(String tag, String msg, Throwable throwable) {
     if (Environment.LOGGING) {
-      Log.wtf(tag, getCallingMethod() + msg, throwable);
+      Log.wtf(tag, getCallingMethod(4) + msg, throwable);
     }
   }
-
-  private static String getCallingMethod() {
-    return Thread.currentThread().getStackTrace()[4].getMethodName() + "()" + ":"
-        + Thread.currentThread().getStackTrace()[4].getLineNumber() + " > ";
+  
+  public static String getCallingMethod(int stack) {
+    return Thread.currentThread().getStackTrace()[stack].getMethodName() + "()" + ":"
+        + Thread.currentThread().getStackTrace()[stack].getLineNumber() + " > ";
   }
-
 }

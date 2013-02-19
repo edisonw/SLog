@@ -30,15 +30,14 @@ public class SLog {
     public static final boolean LOGGING=true;
   }
 
-
   public static final String TAG_COMMON = "APP_DEPENDENT_TAG_FOR_USE_WITH_GREP";
 
   public static boolean isLoggingEnabled() {
     return Environment.LOGGING;
   }
 
-  public static String getTag(String appTag,String className) {
-    return appTag + "." + className;
+  public static String getTag(String appTag, String className) {
+    return ((appTag != null) ? appTag + "." : "") + className;
   }
 
   public static String getTag(String appTag, Class<?> clazz) {

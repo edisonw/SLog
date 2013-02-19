@@ -10,4 +10,4 @@ After iterating through many of my Android projects and seeing how other compani
 * Display method/line/class name for easy tracing. 
 * light weight and has 0 dependencies. 
 * Install: 1. Drop in the three files into a package. 2. use it by replacing Log with SLog. 
-* Or if you want to use a cached logger, just new SLogger() during object instantiation. 
+* Or if you want to use a cached logger, just new SLogger(getClass()) during object instantiation. 
